@@ -11,7 +11,7 @@ RUN mkdir codeql_home
 WORKDIR /root/codeql_home
 RUN mkdir codeql-repo
 RUN git clone --depth 1 https://github.com/github/codeql codeql-repo/
-RUN wget https://github.com/github/codeql-cli-binaries/releases/download/v2.13.3/codeql-linux64.zip
+RUN wget https://github.com/github/codeql-cli-binaries/releases/download/v2.15.5/codeql-linux64.zip
 RUN unzip codeql-linux64.zip
 
 # Copy argus files and queries
