@@ -22,7 +22,7 @@ RUN poetry install
 
 # Create codeql pack
 WORKDIR /root/qlqueries
-RUN codeql pack install
+RUN /root/codeql_home/codeql/codeql pack install
 
 # Now run argus
 WORKDIR /root
