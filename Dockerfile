@@ -20,6 +20,10 @@ COPY argus_components /root/argus_components
 COPY qlqueries /root/qlqueries
 RUN poetry install
 
+# Create codeql pack
+WORKDIR /root/qlqueries
+RUN codeql pack install
+
 # Now run argus
 WORKDIR /root
 RUN mkdir results
